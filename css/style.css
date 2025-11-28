@@ -1,0 +1,93 @@
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+  background-color: #828282;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.container, .conteiner {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Menu */
+.menu {
+  position: fixed;
+  top: 25px;
+  left: 103px;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#menu { display: none; }
+
+/* Barra de navegación */
+
+nav {
+  position: fixed;
+  top: 25px;
+  right: 50px; 
+  z-index: 10;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.navbar ul li a,
+.Menu {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Responsive */
+
+/* Pantallas medianas */
+@media (max-width: 1200px) {
+  .menu { left: 50px; }
+  nav { right: 90px; top: 25px; }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  .menu { left: 25px; top: 20px; }
+  nav { right: 70px; top: 20px; }
+  .Informacion {
+    padding: 40px 20px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  .menu { left: 15px; top: 15px; }
+
+  nav {
+    right: 65px;
+    top: 15px;
+    background: rgba(0,0,0,0.55);
+    padding: 10px 15px;
+    border-radius: 0 0 0 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar ul li a { font-size: 16px; }
+}

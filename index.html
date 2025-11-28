@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styleMenu.css">
+</head>
+<body>
+
+<header class="Cabecera">
+  <div class="menu container">
+    <a href="index.html" class="Menu">Inicio</a>
+    <input type="checkbox" id="menu">
+    <label for="menu"></label>
+    <nav class="navbar">
+      <ul>
+        <li><a href="Informacion.html">Información</a></li>
+        <li><a href="Acciones.html">Acciones</a></li>   
+        <li><a href="Foro.html">Foro</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="inicio">
+
+  <section class="cabecera">
+
+  <div class="cuidar">
+    <div class="cuidar-content">
+      <h1>Cuidar hoy para no destruir mañana</h1>
+      <p>La sostenibilidad es una responsabilidad compartida. Cada decisión que tomamos influye en nuestro entorno y en el futuro de nuestra comunidad.</p>
+      <p>Descubre cómo pequeños cambios pueden generar grandes transformaciones.</p>
+    </div>
+
+    <div id="sliderAcciones" class="carrusel">
+      <button class="prev" onclick="prevSlideAcc()">&#10094;</button>
+      <button class="next" onclick="nextSlideAcc()">&#10095;</button>
+
+      <div class="slides">
+        <div class="ayudar">
+          <div class="slide-text">
+            <h2>¿Cómo podemos ayudar?</h2>
+            <p>Pequeños hábitos pueden generar grandes cambios en nuestra comunidad.</p>
+          </div>
+        </div>
+        <div class="personal">
+          <div class="slide-text">
+            <h2>Acciones personales</h2>
+            <p>Reduce, reutiliza y recicla, apaga luces y desconecta aparatos, ahorra agua.</p>
+          </div>
+        </div>
+        <div class="comunidad">
+          <div class="slide-text">
+            <h2>Acciones en comunidad</h2>
+            <p>Participa en limpiezas, crea puntos de reciclaje y promueve campañas educativas.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="dots">
+        <span class="dot active" onclick="goToSlideAcc(0)"></span>
+        <span class="dot" onclick="goToSlideAcc(1)"></span>
+        <span class="dot" onclick="goToSlideAcc(2)"></span>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+</main>
+
+<script src="Js/Menu.js"></script>
+<script src="Js/carrusel.js"></script>
+</body>
+</html>

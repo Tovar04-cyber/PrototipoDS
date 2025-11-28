@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Foro</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styleForo.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="menu container">
+    <a href="index.html" class="Menu">Inicio</a>
+    <input type="checkbox" id="menu">
+    <label for="menu"></label>
+    <nav class="navbar">
+      <ul>
+        <li><a href="Informacion.html">Información</a></li>
+        <li><a href="Acciones.html">Acciones</a></li>   
+        <li><a href="Foro.html">Foro</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+
+<main class="Foro">
+
+  <section class="comentar">
+  <div>
+    <h1>Comparte tu opinión</h1>
+    <p>Comparte tus ideas sobre cómo prevenir el impacto ambiental.</p>
+
+    <div id="formComentario" class="contenido-oculto">
+      <textarea placeholder="Escribe tu comentario aquí..." rows="4"></textarea>
+      <button onclick="enviarComentario()">Enviar</button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<section class="comentarios">
+  <div>
+    <h2>Comentarios</h2>
+    <div id="comentariosList" class="contenido-oculto">
+      <ul>
+        <!-- Comentarios se agregan aquí -->
+      </ul>
+    </div>
+  </div>
+</section>
+
+<script src="Js/Foro.js" type="module"></script>
+</body>
+</html>

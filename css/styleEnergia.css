@@ -1,0 +1,142 @@
+.cabecera{
+    display: flex;
+    background-image: url("../Imagenes/verde\(2\).jpg");
+    padding: 3%;
+
+}
+
+.Introducción {
+    font-size: 21px;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    padding: 30px;
+    background-color: rgb(192, 183, 183);
+}
+
+.Energia {
+    display: grid;
+    background-color: #444;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    overflow: hidden;
+    color: #444;
+}
+
+
+.acciones {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;     /* baja columnas en pantallas pequeñas */
+    background: transparent;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+
+}
+
+.Personales {
+    flex: 1 1 45%;
+    padding: 5%;
+    border-radius: 5%;
+    margin: 5px;
+    margin-left: 1%;
+    background-image: url("../Imagenes/imagen-3.jpg");
+    background-size: cover;
+    background-position: center;
+    line-height: 1.5;
+}
+
+.Personales h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Personales h2{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Personales ul{
+    font-size: 15px;
+}
+
+.Comunitario {
+    flex: 1 1 45%;
+    padding: 5%;
+    border-radius: 5%;
+    margin: 5px;
+    margin-right: 1%;
+    background-image: url("../Imagenes/imagen-3.jpg");
+    background-size: cover;
+    background-position: center;
+    line-height: 2;
+
+}
+
+.Comunitario h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Comunitario ul {
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+
+.Intro {
+    font-size: 21px;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    padding: 30px;
+    background-color: rgb(192, 183, 183);
+ }
+
+.Comunidades {
+    display: grid;
+    width: 100%;
+    margin-top: 20px;
+    background-image: url("../Imagenes/imagen-2.jpg");
+    justify-content: center;
+}
+
+.Comunidades h1 {
+    font-size: 26px;
+}
+
+.Comunidades p {
+    font-size: 20px;
+}
+
+.titulo {
+    display: block;
+
+}
+
+.Comunidades .titulo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.Comunidades .Organizaciones {
+  display: flex;        
+  gap: 20px;             
+  justify-content: center; 
+  flex-wrap: wrap;   
+}
+
+.Comunidades .Organización {
+  flex: 0 1 30%;          
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-sizing: border-box;  
+  text-align: left;
+  margin-bottom: 20px;
+}

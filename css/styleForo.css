@@ -1,0 +1,153 @@
+/* Sección Foro */
+.Foro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 50px;
+  overflow: hidden;
+  background-image: url("../Imagenes/imagen-1.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 25px;
+  margin-top: 100px;
+  min-height: 580px;
+  max-height: 580px;
+  border-radius: 12px;
+}
+
+/* Formulario de comentarios */
+.comentar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: rgba(255, 255, 255, 0.14);
+  color: #000;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.comentar h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: rgb(72, 141, 145);
+}
+
+.comentar p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* Formulario interno */
+#formComentario {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#formComentario textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  font-size: 16px;
+}
+
+#formComentario button {
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  background-color: rgb(97, 149, 152);
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#formComentario button:hover {
+  background-color: rgb(72, 141, 145);
+}
+
+#formComentario.activo {
+  display: block;
+}
+
+/* Lista de comentarios */
+#comentariosList {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+  overflow-y: auto;
+  min-height: 100px;
+  border-radius: 12px;     
+  padding: 10px;
+  width: 60%;
+  margin-left: 10%;
+  margin-bottom: 50px;
+}
+
+#comentariosList.activo {
+  display: flex;
+}
+
+#comentariosList ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+#comentariosList ul li {
+  background-color: rgba(185, 181, 181, 0.3);       
+  border-radius: 12px;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  word-wrap: break-word;
+  border-left: 5px solid #fff;
+}
+
+#comentariosList ul li .usuario {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: rgb(46, 45, 45);
+}
+
+/* Responsive */
+
+/* Pantallas medianas */
+@media (max-width: 1200px) {
+  .menu { left: 50px; }
+  nav { right: 90px; top: 25px; }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  .menu { left: 25px; top: 20px; }
+  nav { right: 70px; top: 20px; }
+  .Foro { flex-direction: column; padding: 40px 20px; min-height: auto; max-height: auto; }
+  #comentariosList { width: 80%; margin-left: 10%; }
+  .comentar { width: 90%; padding: 25px; }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  .menu { left: 15px; top: 15px; }
+  nav {
+    right: 65px;
+    top: 15px;
+    background: rgba(0,0,0,0.55);
+    padding: 10px 15px;
+    border-radius: 0 0 0 10px;
+  }
+  .navbar ul { flex-direction: column; gap: 10px; }
+  .navbar ul li a { font-size: 16px; }
+  .Foro { padding: 25px 10px; }
+  .comentar { width: 100%; padding: 20px; }
+  #comentariosList { width: 100%; margin-left: 0; }
+}

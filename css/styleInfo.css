@@ -1,0 +1,61 @@
+/* -------------------- */
+.Informacion {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-image: url("../Imagenes/Fondo-Info.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 25px;
+  margin-top: 100px;
+  border-radius: 12px;
+}
+
+.Sostenibilidad,
+.Problemas,
+.Impacto {
+  flex: 1;
+  min-width: 280px;
+  max-width: 380px;
+  padding: 10px;
+  color: #000;
+}
+
+.Sostenibilidad h1,
+.Problemas h1,
+.Impacto h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: rgb(72, 141, 145);
+}
+
+.Sostenibilidad p,
+.Problemas p,
+.Impacto p,
+.Sostenibilidad ul,
+.Problemas ul,
+.Impacto ul {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* Responsive */
+
+@media (max-width: 1200px) {
+
+  .Informacion {
+    flex-direction: column;
+    padding: 25px 10px;
+  }
+
+  .Sostenibilidad,
+  .Problemas,
+  .Impacto {
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
